@@ -20,7 +20,7 @@
         <Font name="Arial Black" size="28.0" />
       </font>
     </Label>
-    <Button id="signup" layoutX="151.0" layoutY="360.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color:purple;&#10;&#10;-fx-background-radius:35;" text="Sign Up" textFill="WHITE">
+    <Button fx:id="signup" layoutX="151.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="50.0" prefWidth="149.0" style="-fx-background-color:purple;&#10;&#10;-fx-background-radius:35;" text="Sign Up" textFill="WHITE">
       <font>
         <Font name="System Bold" size="15.0" />
       </font>

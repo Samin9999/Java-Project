@@ -38,6 +38,6 @@
         <Font name="System Bold" size="24.0" />
       </font>
     </Label>
-    <Button fx:id="signup" layoutX="260.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleSignup" text="Button" />
+    <Button id="signup" layoutX="260.0" layoutY="457.0" mnemonicParsing="false" text="Button" />
   </children>
 </AnchorPane>
