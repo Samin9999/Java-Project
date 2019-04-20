@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-radius: 15;&#10;&#10;-fx-background-color:white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPageController">
+  <children>
+    <HBox layoutX="136.0" layoutY="150.0" prefHeight="287.0" prefWidth="376.0">
+      <children>
+        <VBox prefHeight="273.0" prefWidth="179.0" spacing="10.0">
+          <children>
+            <Label fx:id="id" text="ID :">
+              <font>
+                <Font name="System Bold Italic" size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label fx:id="fullName" font="$x1" text="Name :" />
+            <Label fx:id="department" font="$x1" text="Department :" />
+            <Label fx:id="phoneNumber" font="$x1" text="Phone Number" />
+            <Label font="$x1" text="E-Mail :" />
+          </children>
+        </VBox>
+        <VBox prefHeight="176.0" prefWidth="179.0" spacing="10.0">
+          <children>
+            <Label text="Label">
+              <font>
+                <Font size="15.0" fx:id="x2" />
+              </font>
+            </Label>
+            <Label font="$x2" text="Label" />
+            <Label font="$x2" text="Label" />
+            <Label font="$x2" text="Label" />
+            <Label fx:id="email" font="$x2" text="Label" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="107.0" prefWidth="600.0" style="-fx-background-color:skyblue;">
+      <children>
+        <Label layoutX="150.0" layoutY="30.0" text="Teacher Information" textFill="WHITE">
+          <font>
+            <Font size="25.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="0.0" layoutY="393.0" prefHeight="107.0" prefWidth="600.0" style="&#10;-fx-background-color:gold;" />
+  </children>
+</AnchorPane>

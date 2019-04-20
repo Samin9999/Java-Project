@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="600.0" style="&#10;-fx-background-color:paleturquoise; &#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPaswordChangeController">
+  <children>
+    <VBox layoutX="121.0" layoutY="103.0" prefHeight="235.0" prefWidth="356.0" spacing="20.0">
+      <children>
+        <Label text="Previous Password">
+          <font>
+            <Font name="System Bold" size="17.0" fx:id="x1" />
+          </font>
+        </Label>
+        <PasswordField fx:id="previousPassword" prefWidth="200.0" />
+        <Label font="$x1" text="New Password" />
+        <PasswordField fx:id="newPassword" prefWidth="200.0" />
+        <Label font="$x1" text="Confirm New Password" />
+        <PasswordField fx:id="confirmNewPassword" prefWidth="200.0" />
+      </children>
+    </VBox>
+    <Label layoutX="149.0" layoutY="22.0" prefWidth="341.0" text="Change Student Password">
+      <font>
+        <Font name="System Bold" size="23.0" />
+      </font>
+    </Label>
+    <Button fx:id="confirm" font="$x1" layoutX="210.0" layoutY="381.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color:purple;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" />
+  </children>
+</AnchorPane>
