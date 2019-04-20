@@ -10,7 +10,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="600.0" style="-fx-background-radius: 15;&#10;&#10;-fx-background-color:gold; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.LoginPageController">
   <children>
-    <Button fx:id="confirm" layoutX="197.0" layoutY="381.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color:black;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" />
+    <Button fx:id="confirm" layoutX="197.0" layoutY="381.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
     <VBox layoutX="119.0" layoutY="111.0" prefHeight="238.0" prefWidth="304.0" spacing="18.0">
       <children>
         <Label fx:id="enterName" text="Enter Name">
@@ -38,6 +42,6 @@
         <Font name="System Bold" size="24.0" />
       </font>
     </Label>
-    <Button fx:id="signup" layoutX="260.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleSignup" text="Button" />
+    <Button id="signup" layoutX="260.0" layoutY="457.0" mnemonicParsing="false" text="Button" />
   </children>
 </AnchorPane>

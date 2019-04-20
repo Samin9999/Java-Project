@@ -5,7 +5,6 @@
  */
 package javafxapplication2;
 
-import static java.awt.SystemColor.window;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,16 +30,15 @@ public class LoginPageController implements Initializable {
      * Initializes the controller class.
      */
     @FXML
-    private TextField as;
+    private TextField id;
     
     @FXML 
-    private PasswordField pass;
+    private PasswordField password;
     
     @FXML
     private Button confirm;
     
-    @FXML
-    private Button signup;
+    
     @FXML 
     private Label enterName;
     
@@ -73,19 +71,9 @@ public class LoginPageController implements Initializable {
      * @param event
      * @throws IOException
      */
-    @FXML
-    public void handleSignup(ActionEvent event) throws IOException{
-        
-        Parent root2;
-        root2 = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
-        
-        Scene scene2;
-        scene2 = new Scene(root2);
-        
-        Stage window2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window2.setScene(scene2);
-        window2.show();
-    }
+    
+    
+    
     
     
     

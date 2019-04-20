@@ -30,14 +30,16 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button login;
     
-    
-    
-    
-    
+    /**
+     *
+     * @param event
+     * @throws IOException
+     */
     @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
+    public void handleButtonAction(ActionEvent event) throws IOException {
         
         Parent root2;
+        
         root2 = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
         
         Scene scene2;
@@ -47,6 +49,29 @@ public class FXMLDocumentController implements Initializable {
         window.setScene(scene2);
         window.show();
     }
+    @FXML
+    private Button signup;
+    
+    /**
+     *
+     * @param event
+     * @throws IOException
+     */
+    @FXML
+    public void handleSignup(ActionEvent event) throws IOException{
+        
+        Parent root3;
+        
+        root3 = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+      
+        Scene scene3;
+        scene3 = new Scene(root3);
+        
+        Stage window3 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window3.setScene(scene3);
+        window3.show();
+    }
+    
     
     
     @Override
