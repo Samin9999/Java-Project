@@ -49,28 +49,69 @@ public class LoginPageController implements Initializable {
     private ChoiceBox Identity;
     
     
-    String name;
-    String password;
+    String idString;
+    String passwordString;
     String status;
+    int a;
     
     /**
      *
      * @param event
      */
-    public void confirmButton(ActionEvent event){
-        name= as.getText();
-        System.out.println(name);
-        password = pass.getText();
-        System.out.println(password);
+    
+    
+    
+   @FXML
+    private Button back;
+    
+    @FXML
+    public void back(ActionEvent event) throws IOException{
+        
+        Parent root5;
+        
+        root5 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+      
+        Scene scene5;
+        scene5 = new Scene(root5);
+        
+        Stage window5 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window5.setScene(scene5);
+        window5.show();
+    }
+    @FXML
+    public void confirmButton(ActionEvent event) throws IOException{
+        idString= id.getText();
+        
+        passwordString = password.getText();
+        System.out.println(passwordString);
         status = Identity.getValue().toString();
-        System.out.println(status);
+        
+        Parent root2;
+        
+        
+      
+        
+        
+        if("Student".equals(status)){
+            root2 = FXMLLoader.load(getClass().getResource("StudentPage.fxml"));
+        } else {
+            root2 = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
+        }
+        Scene scene2;
+        scene2 = new Scene(root2);
+        
+        Stage window2 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window2.setScene(scene2);
+        window2.show();
+        
     }
     
+    
+    
     /**
      *
-     * @param event
-     * @throws IOException
-     */
+     * @
     
     
     
@@ -87,7 +128,7 @@ public class LoginPageController implements Initializable {
         // TODO
         Identity.getItems().clear();
         Identity.getItems().add("Student");
-        Identity.getItems().add("Teacher");
+        Identity.getItems().add("Admin");
     }    
 
     

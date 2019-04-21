@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  *
  * @author Tanzimul Hoque
  */
-public class StudentPageController implements Initializable {
+public class AdminPageController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -46,42 +46,75 @@ public class StudentPageController implements Initializable {
     private Label email;
     
     @FXML
-    private Label fatherName;
+    private Button add;
     
     @FXML
-    private Label motherName;
-            
-    @FXML
-    private Label year;
+    private Button edit;
     
     @FXML
-    private Label semester;
+    private Button delete;
     
     @FXML
-    private Label address;
-    
-    @FXML
-    private Label result;
-    
-    @FXML
-    private Button confirm;
-    
-    @FXML
-    public void confirmButton(ActionEvent event) throws IOException{
-           
-        Parent root2;
-        root2 = FXMLLoader.load(getClass().getResource("StudentPaswordChange.fxml"));
+    public void add(ActionEvent event) throws IOException{
         
+        Parent root;
+        
+        root = FXMLLoader.load(getClass().getResource("AddStudent.fxml"));
+      
+        Scene scene;
+        scene = new Scene(root);
+        
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+    
+    @FXML
+    public void edit(ActionEvent event) throws IOException{
+        
+        Parent root2;
+        
+        root2 = FXMLLoader.load(getClass().getResource("EditStudent.fxml"));
+      
         Scene scene2;
         scene2 = new Scene(root2);
         
         Stage window2 = (Stage)((Node)event.getSource()).getScene().getWindow();
-        
         window2.setScene(scene2);
         window2.show();
-        
     }
+    
     @FXML
+    public void delete(ActionEvent event) throws IOException{
+        
+        Parent root3;
+        
+        root3 = FXMLLoader.load(getClass().getResource("DeleteStudent.fxml"));
+      
+        Scene scene3;
+        scene3 = new Scene(root3);
+        
+        Stage window3 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window3.setScene(scene3);
+        window3.show();
+    }
+    
+    @FXML
+    public void changePass(ActionEvent event) throws IOException{
+        
+        Parent root4;
+        
+        root4 = FXMLLoader.load(getClass().getResource("AdminPasswordChange.fxml"));
+      
+        Scene scene4;
+        scene4 = new Scene(root4);
+        
+        Stage window4 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window4.setScene(scene4);
+        window4.show();
+    }
+    
+@FXML
     private Button back;
     
     @FXML
@@ -98,10 +131,13 @@ public class StudentPageController implements Initializable {
         window5.setScene(scene5);
         window5.show();
     }
+
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        email.setText("sas");
     }    
     
 }

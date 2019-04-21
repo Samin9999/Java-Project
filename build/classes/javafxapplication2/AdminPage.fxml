@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AdminPageController">
+  <children>
+    <GridPane layoutX="176.0" layoutY="122.0" prefWidth="249.0">
+      <children>
+        <Label prefWidth="50.0" text="ID :" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label fx:id="id" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label font="$x1" text="Name :" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label id="department" fx:id="fullName" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label font="$x1" text="Department :" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label fx:id="department" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label font="$x1" text="Phone Number :" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label fx:id="phoneNumber" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label fx:id="email" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label font="$x1" text="E-Mail :" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="92.0" prefWidth="599.9999000000025" style="-fx-background-color:orange;">
+      <children>
+        <Label layoutX="183.0" layoutY="29.0" text="Admin Information" textFill="BLACK">
+          <font>
+            <Font name="System Bold" size="25.0" />
+          </font>
+        </Label>
+        <Button fx:id="back" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" />
+      </font>
+    </Button>
+      </children>
+    </AnchorPane>
+    <Button fx:id="add" layoutX="96.0" layoutY="341.0" mnemonicParsing="false" onAction="#add" text="ADD" />
+    <Button fx:id="edit" layoutX="241.0" layoutY="342.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+    <Button fx:id="delete" layoutX="369.0" layoutY="348.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+    <Button layoutX="471.0" layoutY="342.0" mnemonicParsing="false" onAction="#changePass" text="Change password" />
+  </children>
+</AnchorPane>

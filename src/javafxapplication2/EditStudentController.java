@@ -5,23 +5,31 @@
  */
 package javafxapplication2;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
-
-
-
-
-public class EditStudentInfoController implements Initializable {
+/**
+ * FXML Controller class
+ *
+ * @author Tanzimul Hoque
+ */
+public class EditStudentController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
+    
     @FXML
     private TextField id;
     
@@ -99,7 +107,23 @@ public class EditStudentInfoController implements Initializable {
   
          
     }
+    @FXML
+    private Button back;
     
+    @FXML
+    public void back(ActionEvent event) throws IOException{
+        
+        Parent root5;
+        
+        root5 = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
+      
+        Scene scene5;
+        scene5 = new Scene(root5);
+        
+        Stage window5 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window5.setScene(scene5);
+        window5.show();
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {

@@ -57,6 +57,8 @@ public class FXMLDocumentController implements Initializable {
      * @param event
      * @throws IOException
      */
+    
+    
     @FXML
     public void handleSignup(ActionEvent event) throws IOException{
         
@@ -71,6 +73,8 @@ public class FXMLDocumentController implements Initializable {
         window3.setScene(scene3);
         window3.show();
     }
+    
+    
     
     
     

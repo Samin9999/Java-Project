@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  *
  * @author Tanzimul Hoque
  */
-public class SignUpController implements Initializable {
+public class AddStudentController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -46,9 +46,23 @@ public class SignUpController implements Initializable {
     private TextField email;
     
     @FXML
-    private TextField authenCode;
+    private TextField motherName;
     
+    @FXML
+    private TextField fatherName;
     
+    @FXML
+    private TextField year;
+    
+    @FXML
+    private TextField semester;
+    
+   
+    @FXML
+    private TextField address;
+    
+    @FXML
+    private TextField result;
     
     @FXML 
     private Button confirm; 
@@ -60,8 +74,12 @@ public class SignUpController implements Initializable {
     String departmentString;
     String phoneNumberString;
     String emailString;
-    String authenCodeString;
-    
+    String fatherNameString;
+    String motherNameString;
+    String yearString;
+    String semesterString;
+    String addressString;
+    String resultString;
     
     public void confirmButton(ActionEvent event){
         idString= id.getText();
@@ -74,13 +92,22 @@ public class SignUpController implements Initializable {
         
         emailString = email.getText();
         
-        authenCodeString = authenCode.getText();
-       
+        fatherNameString = fatherName.getText();
+        
+        motherNameString = motherName.getText();
+        
+        yearString = year.getText();
+        
+        semesterString = semester.getText();
+        
+        addressString = address.getText();
+        
+        resultString = result.getText();
+        
+  
          
     }
-    
-    
-@FXML
+    @FXML
     private Button back;
     
     @FXML
@@ -88,12 +115,11 @@ public class SignUpController implements Initializable {
         
         Parent root5;
         
-        root5 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        root5 = FXMLLoader.load(getClass().getResource("AdminPage.fxml"));
       
         Scene scene5;
-
-        scene5 = new Scene(root5);    
-
+        scene5 = new Scene(root5);
+        
         Stage window5 = (Stage)((Node)event.getSource()).getScene().getWindow();
         window5.setScene(scene5);
         window5.show();
@@ -105,3 +131,5 @@ public class SignUpController implements Initializable {
     }    
     
 }
+
+    
