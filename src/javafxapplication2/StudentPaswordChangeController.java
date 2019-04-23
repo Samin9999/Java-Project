@@ -41,6 +41,9 @@ public class StudentPaswordChangeController implements Initializable {
     @FXML 
     private PasswordField confirmNewPassword;
     
+    @FXML 
+    private TextField id;
+    
     @FXML
     private Button confirm;
     
@@ -50,12 +53,16 @@ public class StudentPaswordChangeController implements Initializable {
     
     String confirmNewPasswordString;
     
+    String idString;
+    
     public void confirmButton(ActionEvent event){
         previousPasswordString= previousPassword.getText();
         
         newPasswordString = newPassword.getText();
       
         confirmNewPasswordString = confirmNewPassword.getText();
+        
+        idString = id.getText();
     }
     
     @FXML

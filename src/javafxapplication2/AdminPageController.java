@@ -104,7 +104,7 @@ public class AdminPageController implements Initializable {
         
         Parent root4;
         
-        root4 = FXMLLoader.load(getClass().getResource("AdminPasswordChange.fxml"));
+        root4 = FXMLLoader.load(getClass().getResource("AdminPass.fxml"));
       
         Scene scene4;
         scene4 = new Scene(root4);
@@ -131,6 +131,7 @@ public class AdminPageController implements Initializable {
         window5.setScene(scene5);
         window5.show();
     }
+    
 
     
     
@@ -138,6 +139,7 @@ public class AdminPageController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         email.setText("sas");
+        id.setText("as");
     }    
     
 }

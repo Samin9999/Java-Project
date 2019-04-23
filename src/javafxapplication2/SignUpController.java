@@ -16,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -48,6 +49,9 @@ public class SignUpController implements Initializable {
     @FXML
     private TextField authenCode;
     
+    @FXML
+    private PasswordField password;
+    
     
     
     @FXML 
@@ -61,9 +65,10 @@ public class SignUpController implements Initializable {
     String phoneNumberString;
     String emailString;
     String authenCodeString;
+    String passwordString;
     
     
-    public void confirmButton(ActionEvent event){
+    public void confirmButton(ActionEvent event) throws IOException{
         idString= id.getText();
         
         nameString = name.getText();
@@ -76,6 +81,19 @@ public class SignUpController implements Initializable {
         
         authenCodeString = authenCode.getText();
        
+        passwordString = password.getText();
+        
+        Parent root3;
+        
+        root3 = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
+      
+        Scene scene3;
+
+        scene3 = new Scene(root3);    
+
+        Stage window3 = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window3.setScene(scene3);
+        window3.show();
          
     }
     

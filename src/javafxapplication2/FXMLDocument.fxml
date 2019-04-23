@@ -7,6 +7,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
 
 <AnchorPane id="AnchorPane" depthTest="DISABLE" opacity="1.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-radius: 15;&#10;&#10;-fx-background-color:deepskyblue; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.FXMLDocumentController">
   <children>

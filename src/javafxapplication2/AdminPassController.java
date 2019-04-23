@@ -16,7 +16,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -26,38 +25,11 @@ import javafx.stage.Stage;
  *
  * @author Tanzimul Hoque
  */
-public class AdminPasswordChangeController implements Initializable {
+public class AdminPassController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
-    
-    @FXML
-    private PasswordField previousPassword;
-    
-    @FXML 
-    private PasswordField newPassword;
-    
-    @FXML 
-    private PasswordField confirmNewPassword;
-    
-    @FXML
-    private Button confirm;
-    
-    String previousPasswordString;
-    
-    String newPasswordString;
-    
-    String confirmNewPasswordString;
-    
-    public void confirmButton(ActionEvent event){
-        previousPasswordString= previousPassword.getText();
-        
-        newPasswordString = newPassword.getText();
-      
-        confirmNewPasswordString = confirmNewPassword.getText();
-    }
-    
     @FXML
     private Button back;
     
@@ -75,8 +47,38 @@ public class AdminPasswordChangeController implements Initializable {
         window5.setScene(scene5);
         window5.show();
     }
-
+    @FXML
+    private PasswordField previousPassword;
     
+    @FXML 
+    private PasswordField newPassword;
+    
+    @FXML 
+    private PasswordField confirmNewPassword;
+    
+    @FXML 
+    private TextField id;
+    
+    @FXML
+    private Button confirm;
+    
+    String previousPasswordString;
+    
+    String newPasswordString;
+    
+    String confirmNewPasswordString;
+    
+     String idString;
+    
+    public void confirmButton(ActionEvent event){
+        previousPasswordString= previousPassword.getText();
+        
+        newPasswordString = newPassword.getText();
+      
+        confirmNewPasswordString = confirmNewPassword.getText();
+        
+        idString = id.getText();
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

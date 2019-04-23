@@ -17,6 +17,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -29,13 +30,12 @@ public class FXMLDocumentController implements Initializable {
     private Label label;
     @FXML
     private Button login;
+    private Object locator;
+    private AnchorPane AnchorPane;
     
-    /**
-     *
-     * @param event
-     * @throws IOException
-     */
-    @FXML
+
+     
+   @FXML
     public void handleButtonAction(ActionEvent event) throws IOException {
         
         Parent root2;
@@ -47,6 +47,7 @@ public class FXMLDocumentController implements Initializable {
         
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene2);
+        
         window.show();
     }
     @FXML
