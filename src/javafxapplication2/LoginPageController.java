@@ -83,15 +83,16 @@ public class LoginPageController implements Initializable {
         idString= id.getText();
         
         passwordString = password.getText();
-        System.out.println(passwordString);
+       
         status = Identity.getValue().toString();
         
+        id.clear();
+        password.clear();
+       
+        
+        
         Parent root2;
-        
-        
-      
-        
-        
+
         if("Student".equals(status)){
             root2 = FXMLLoader.load(getClass().getResource("StudentPage.fxml"));
         } else {

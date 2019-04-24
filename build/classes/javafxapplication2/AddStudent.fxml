@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AddStudentController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AddStudentController">
   <children>
-    <GridPane focusTraversable="false" gridLinesVisible="false" layoutX="141.0" layoutY="95.0" opacity="1.0" prefHeight="292.0" prefWidth="318.0" visible="true">
+    <GridPane focusTraversable="false" gridLinesVisible="false" layoutY="103.0" opacity="1.0" prefHeight="325.0" prefWidth="318.0" visible="true" AnchorPane.leftAnchor="394.0" AnchorPane.rightAnchor="488.0">
       <children>
         <Label prefWidth="80.0" text="ID :" GridPane.columnIndex="0" GridPane.rowIndex="0">
           <font>
-            <Font name="System Bold" size="15.0" fx:id="x1" />
+            <Font name="System Bold" size="18.0" fx:id="x1" />
           </font>
         </Label>
         <Label font="$x1" text="Phone Number :" GridPane.columnIndex="0" GridPane.rowIndex="3" />
@@ -56,12 +56,20 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
-    <Label layoutX="259.0" layoutY="14.0" text="Add Student Info">
+    <Button fx:id="confirm" layoutY="518.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="55.0" prefWidth="148.0" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Confirm" textFill="WHITE" AnchorPane.leftAnchor="526.0" AnchorPane.rightAnchor="526.0">
       <font>
-        <Font name="System Bold" size="25.0" />
+        <Font name="System Bold" size="16.0" />
       </font>
-    </Label>
-    <Button fx:id="confirm" layoutX="256.0" layoutY="429.0" mnemonicParsing="false" onAction="#confirmButton" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Confirm" textFill="WHITE" />
-    <Button fx:id="back" layoutX="27.0" layoutY="27.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Button" textFill="WHITE" />
+    </Button>
+    <AnchorPane layoutY="0.0" minHeight="79.0" prefHeight="79.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Label layoutY="23.0" prefWidth="288.0" text="Add Student Info" textFill="WHITE" AnchorPane.leftAnchor="494.0" AnchorPane.rightAnchor="418.0">
+          <font>
+            <Font name="System Bold" size="25.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <Button fx:id="back" layoutX="1055.0" layoutY="585.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Back" textFill="WHITE" />
   </children>
 </AnchorPane>

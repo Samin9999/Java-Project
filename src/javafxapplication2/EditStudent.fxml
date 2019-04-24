@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AddStudentController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.AddStudentController">
   <children>
-    <GridPane focusTraversable="false" gridLinesVisible="false" layoutX="141.0" layoutY="95.0" opacity="1.0" prefHeight="292.0" prefWidth="318.0" visible="true">
+    <GridPane focusTraversable="false" gridLinesVisible="false" layoutX="363.0" layoutY="152.0" opacity="1.0" prefHeight="333.0" prefWidth="471.0" visible="true">
       <children>
         <Label prefWidth="80.0" text="ID :" GridPane.columnIndex="0" GridPane.rowIndex="0">
           <font>
-            <Font name="System Bold" size="15.0" fx:id="x1" />
+            <Font name="System Bold" size="18.0" fx:id="x1" />
           </font>
         </Label>
         <Label font="$x1" text="Phone Number :" GridPane.columnIndex="0" GridPane.rowIndex="3" />
@@ -39,42 +39,32 @@
         <Label font="$x1" text="Department" GridPane.columnIndex="0" GridPane.rowIndex="2" />
       </children>
       <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="370.0" minWidth="10.0" prefWidth="275.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="196.0" />
       </columnConstraints>
       <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
-    <Label layoutX="259.0" layoutY="14.0" text="Edit Student Info">
-      <font>
-        <Font name="System Bold" size="25.0" />
-      </font>
-    </Label>
-    <Button fx:id="back" layoutX="27.0" layoutY="27.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Button" textFill="WHITE" />
-    <GridPane layoutX="360.0" layoutY="395.0">
+    <AnchorPane layoutX="0.0" layoutY="0.0" minHeight="83.0" prefHeight="83.0" prefWidth="1200.0" style="&#10;-fx-background-color:dodgerblue; &#10;">
       <children>
-        <Button fx:id="confirm" mnemonicParsing="false" onAction="#confirmButton" style="-fx-background-color:black;&#10;&#10;-fx-background-radius:35;&#10;" text="Confirm" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label layoutX="445.0" layoutY="20.0" text="Edit Student Info" textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="32.0" />
+          </font>
+        </Label>
       </children>
-      <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-      </columnConstraints>
-      <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      </rowConstraints>
-    </GridPane>
+    </AnchorPane>
+    <Button fx:id="back" layoutX="1050.0" layoutY="587.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;&#10;" text="Back" textFill="WHITE" />
   </children>
 </AnchorPane>

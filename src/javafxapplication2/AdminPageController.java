@@ -54,6 +54,16 @@ public class AdminPageController implements Initializable {
     @FXML
     private Button delete;
     
+    String idString;
+    
+    String nameString;
+    
+    String departmentString;
+    
+    String phoneString;
+    
+    String emailString;
+    
     @FXML
     public void add(ActionEvent event) throws IOException{
         
@@ -138,8 +148,12 @@ public class AdminPageController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        email.setText("sas");
-        id.setText("as");
+       
+        id.setText(idString);
+        fullName.setText(nameString);
+        department.setText(departmentString);
+        phoneNumber.setText(phoneString);
+        email.setText(emailString);
     }    
     
 }

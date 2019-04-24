@@ -39,6 +39,7 @@ public class DeleteStudentController implements Initializable {
     @FXML
     public void confirmButton(ActionEvent event) throws IOException{
         idString= id.getText();
+        id.clear();
     }
     
 @FXML

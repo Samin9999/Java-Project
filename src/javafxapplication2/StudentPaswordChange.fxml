@@ -7,31 +7,35 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="600.0" style="&#10;-fx-background-color:paleturquoise; &#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPaswordChangeController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" style="&#10;-fx-background-color:paleturquoise; &#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.StudentPaswordChangeController">
   <children>
-    <VBox layoutX="121.0" layoutY="85.0" prefHeight="312.0" prefWidth="356.0" spacing="20.0">
+    <VBox layoutY="94.0" prefHeight="368.0" prefWidth="479.0" spacing="20.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="301.0">
       <children>
-        <Label text="Id">
+        <Label minWidth="13.999908447265625" prefWidth="47.0" text="Id">
           <font>
-            <Font name="System Bold" size="17.0" fx:id="x1" />
+            <Font name="System Bold" size="23.0" fx:id="x2" />
           </font>
         </Label>
         <TextField fx:id="id" prefWidth="200.0" />
-        <Label font="$x1" text="Previous Password" />
+        <Label font="$x2" text="Previous Password" />
         <PasswordField fx:id="previousPassword" prefWidth="200.0" />
-        <Label font="$x1" text="New Password" />
+        <Label font="$x2" text="New Password" />
         <PasswordField fx:id="newPassword" prefWidth="200.0" />
-        <Label font="$x1" text="Confirm New Password" />
+        <Label font="$x2" text="Confirm New Password" />
         <PasswordField fx:id="confirmNewPassword" prefWidth="200.0" />
       </children>
     </VBox>
-    <Label layoutX="149.0" layoutY="22.0" prefWidth="341.0" text="Change Student Password">
+    <Label layoutY="19.0" prefWidth="442.0" text="Change Student Password" AnchorPane.leftAnchor="457.0" AnchorPane.rightAnchor="301.0">
       <font>
-        <Font name="System Bold" size="23.0" />
+        <Font name="System Bold" size="32.0" />
       </font>
     </Label>
-    <Button fx:id="confirm" font="$x1" layoutX="210.0" layoutY="457.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color:purple;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" />
-    <Button fx:id="back" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+    <Button fx:id="confirm" layoutY="543.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="58.0" prefWidth="184.0" style="-fx-background-color:purple;&#10;-fx-font-weight:bold;&#10;-fx-background-radius:35;" text="Confirm" textFill="WHITE" AnchorPane.leftAnchor="547.0" AnchorPane.rightAnchor="469.0">
+      <font>
+        <Font name="System Bold" size="17.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="back" layoutX="1089.0" layoutY="601.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
       <font>
         <Font name="System Bold" size="12.0" />
       </font>

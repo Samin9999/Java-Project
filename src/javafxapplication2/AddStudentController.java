@@ -104,6 +104,18 @@ public class AddStudentController implements Initializable {
         
         resultString = result.getText();
         
+        id.clear();
+        name.clear();
+        department.clear();
+        phoneNumber.clear();
+        email.clear();
+        fatherName.clear();
+        motherName.clear();
+        year.clear();
+        semester.clear();
+        result.clear();
+        
+        
   
          
     }

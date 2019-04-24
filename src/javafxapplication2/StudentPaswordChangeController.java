@@ -63,6 +63,11 @@ public class StudentPaswordChangeController implements Initializable {
         confirmNewPasswordString = confirmNewPassword.getText();
         
         idString = id.getText();
+        
+        id.clear();
+        previousPassword.clear();
+        newPassword.clear();
+        confirmNewPassword.clear();
     }
     
     @FXML

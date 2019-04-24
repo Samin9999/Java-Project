@@ -78,6 +78,11 @@ public class AdminPassController implements Initializable {
         confirmNewPasswordString = confirmNewPassword.getText();
         
         idString = id.getText();
+        
+        id.clear();
+        previousPassword.clear();
+        newPassword.clear();
+        confirmNewPassword.clear();
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {

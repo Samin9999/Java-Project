@@ -7,31 +7,35 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.DeleteStudentController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication2.DeleteStudentController">
   <children>
-    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="87.0" prefWidth="600.0" style="-fx-background-color:orange;">
+    <AnchorPane layoutY="0.0" prefHeight="87.0" prefWidth="1200.0" style="-fx-background-color:dodgerblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
       <children>
-        <Label layoutX="191.0" layoutY="28.0" text="Delete Student">
+        <Label layoutY="30.0" text="Delete Student" textFill="WHITE" AnchorPane.leftAnchor="504.0" AnchorPane.rightAnchor="471.0">
           <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="32.0" />
           </font>
         </Label>
-        <Button fx:id="back" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
-      <font>
-        <Font name="System Bold" size="12.0" />
-      </font>
-    </Button>
       </children>
     </AnchorPane>
-    <Label layoutX="94.0" layoutY="147.0" text="Student Id :">
-      <font>
-        <Font size="24.0" />
-      </font>
-    </Label>
-    <TextField fx:id="id" layoutX="300.0" layoutY="147.0" prefHeight="32.0" prefWidth="200.0" />
-    <Button fx:id="confirm" layoutX="174.0" layoutY="289.0" mnemonicParsing="false" onAction="#confirmButton" style="-fx-background-color:deepskyblue;&#10;&#10;-fx-background-radius:35;" text="Confirm Delete">
+    <Button fx:id="confirm" layoutY="411.0" mnemonicParsing="false" onAction="#confirmButton" style="-fx-background-color:deepskyblue;&#10;&#10;-fx-background-radius:35;" text="Confirm Delete" AnchorPane.leftAnchor="455.0" AnchorPane.rightAnchor="542.0">
       <font>
         <Font name="System Bold" size="23.0" />
+      </font>
+    </Button>
+    <HBox layoutY="171.0" prefHeight="100.0" prefWidth="458.0" spacing="60.0" AnchorPane.leftAnchor="371.0" AnchorPane.rightAnchor="371.0">
+      <children>
+        <Label text="Student Id :">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+        <TextField fx:id="id" prefHeight="32.0" prefWidth="200.0" />
+      </children>
+    </HBox>
+    <Button fx:id="back" layoutX="1096.0" layoutY="599.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color:red;&#10;&#10;-fx-background-radius:35;" text="Back" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="12.0" />
       </font>
     </Button>
   </children>

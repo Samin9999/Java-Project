@@ -83,6 +83,15 @@ public class SignUpController implements Initializable {
        
         passwordString = password.getText();
         
+        id.clear();
+        name.clear();
+        department.clear();
+        phoneNumber.clear();
+        email.clear();
+        authenCode.clear();
+        password.clear();
+        
+        
         Parent root3;
         
         root3 = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
